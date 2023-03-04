@@ -14,5 +14,5 @@ def home(request):
         obj.save()
         data = Contacts.objects.all()
         messages.success(request,"Your Contact Details Share Successfully")
-        return render(request,'index.html',{'data': data,'name':name })
-    return render(request,'index.html')
+        return render(request,'app/index.html',{'data': data,'name':name })
+    return render(request,'app/index.html')
